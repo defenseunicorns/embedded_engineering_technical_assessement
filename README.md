@@ -1,18 +1,19 @@
 # Background
 
-Image data acquisition is desired, but no software interfaces for it exist.  Hence, we need to write a program to read images from a raw stream.
+Image data acquisition is desired, but no software interfaces for it exist.
+Hence, we need to write a program to read images from a raw stream.
 
 The raw stream consists of:
 
 - A `uint12` (12 bit) value per pixel.  They represent the grayscale reading for
   a pixel.  A value of 0 means no signal, whereas a value of 4095 means
   saturation.
-- There are 640x480 = 307200 pixels represented per reading.  It's a rolling
+- There are `640x480 = 307,200` pixels represented per reading.  It's a rolling
   shutter camera scanning horizontally.  Hence, the first 640 values in the stream
   represent the top most row in the image.  The second 640 values represent the
   second from the top row in an image
 - There is no padding between values.  In other words, one capture of an image
-  consists of 640\*480\*12/8 = 460800 bytes.
+  consists of `640*480*12/8 = 460,800` bytes.
 
 Attached is a raw stream dump of the sensor readings.  Please feel free to
 compile as you go.
@@ -45,6 +46,10 @@ compile as you go.
 
 ## Submission
 
-1. Please include a Makefile and build instructions.  Any compiler or operating
-  system is OK, but GNU/Linux is preferred.  Please use only the stdlib for
-  questions 1 to 6.  You can use whatever libraries (if wanted) for #7.
+Please update the included Makefile and build include any custom build
+instructions. Acceptable submissions must be built via `make build` and `make
+run` and no more.
+  
+Any compiler or operating system is OK, but GNU/Linux is preferred.  Please use
+only the stdlib for questions 1 to 6.  You can use whatever libraries (if
+wanted) for #7.
