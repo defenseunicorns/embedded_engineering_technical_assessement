@@ -44,15 +44,16 @@ compile as you go.
   function that can crop out a box from this data.  It takes 4 parameters:
   `x`,`y`,`w`,`h`.  The `x`,`y` is the upper left starting location of the
   subset, `w` is width of the box (in pixels), and `h` is the height of the box
-  (in pixels).  Crop the image using the following parameters (x=10, y=200,
-  w=50, h=100).
+  (in pixels).  Crop the image using the following parameters (x=208, y=110,
+  w=418, h=296).
 
 4. Often times, ML models consume a floating-point representation.  The float
   value of each pixel is linearly dependent on the `uint16` value, where a fully
   saturated pixel maps to a value of 1.0 and a non-activated pixel maps to a
-  value of 0.0.  Convert the image to a `float16` image.
+  value of 0.0.  Convert the image to a float image.  Don't worry about which type of 
+  float.
 
-5. Output the cropped float16 image to stdout.
+5. Output the cropped float image to stdout.
 
 6. Given this will be a video stream, we need to constantly load (#1), crop
   (#3), convert (#4), output (#5), unload, and repeat for the next frame -
