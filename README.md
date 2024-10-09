@@ -60,7 +60,14 @@ out of the box.
 If needed, please update the included Makefile and build include any custom
 build instructions. Acceptable submissions must be built via `make build` and
 `make run` and no more.
+
+Please compile and `git commit` as you go - your git history is also part of
+your submission.
   
 Any compiler or operating system is OK, but GNU/Linux is preferred.  Please use
 only the stdlib for questions 1 to 6.  You can use whatever libraries (if
 wanted) for #7.
+
+The final deliverable is a tarball (optionally compressed) containing this
+directory with any changes but *excluding* any binary artifacts (object files or
+executables).
