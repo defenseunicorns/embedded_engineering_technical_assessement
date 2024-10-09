@@ -44,11 +44,22 @@ compile as you go.
 
 7. How would you validate the results and the code you wrote?
 
+## Tooling
+
+Included in the exercise is a VSCode-compatible development container
+configuration that includes a working C++ environment.  You are _encouraged_ but
+*NOT* required to use the devcontainer in the course of your work as the
+*engineers assessing your work will expect build and run to work in the
+*environment.
+
+The included `Makefile`'s default target builds _and_ runs the included binary
+out of the box.
+
 ## Submission
 
-Please update the included Makefile and build include any custom build
-instructions. Acceptable submissions must be built via `make build` and `make
-run` and no more.
+If needed, please update the included Makefile and build include any custom
+build instructions. Acceptable submissions must be built via `make build` and
+`make run` and no more.
   
 Any compiler or operating system is OK, but GNU/Linux is preferred.  Please use
 only the stdlib for questions 1 to 6.  You can use whatever libraries (if
