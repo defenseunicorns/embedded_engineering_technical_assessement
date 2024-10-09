@@ -1,4 +1,21 @@
-# Background
+# Defense Unicorns - Embedded Systems Practical
+
+## Overview
+
+This template repository contains a bare skeleton of a C++ project meant to
+evaluate an Embedded Systems Programmer's hands-on abilities.  The exercise is
+specified below in "Background and Exercise"
+
+Please spend no more than 4 hours on the exercise.  The goal is a working
+application that is free from defects such as memory allocation errors, etc.
+
+To complete the exercise please create a new repository from this template and
+push your changes to it.  When complete email your recruiting contact at Defense
+Unicorns.  The hiring team will then evaluate your submission, and if it meets
+the standard, move onto an in-person review of the submission where enhancements
+and other changes can be discussed.
+
+## Background and Exercise
 
 Image data acquisition is desired, but no software interfaces for it exist.
 Hence, we need to write a program to read images from a raw stream.
@@ -69,5 +86,5 @@ only the stdlib for questions 1 to 6.  You can use whatever libraries (if
 wanted) for #7.
 
 The final deliverable is a tarball (optionally compressed) containing this
-directory with any changes but *excluding* any binary artifacts (object files or
+directory with any changes but _excluding_ any binary artifacts (object files or
 executables).
