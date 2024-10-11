@@ -9,7 +9,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-vscode.cpptools-themes"
+				"ms-vscode.cpptools-themes",
+				"ms-vscode.cpptools-extension-pack"
 			]
 		}
 	}
